@@ -1,0 +1,108 @@
+digraph G {
+  
+  subgraph cluster_1 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Димитър->Олга_Дъщеря;
+    Йонка->Олга_Дъщеря;
+    Димитър->Петър_Син;
+    Йонка->Петър_Син;
+    Димитър->Енчо_Син;
+    Йонка->Енчо_Син;
+    label = "Максимови";
+  }
+
+  subgraph cluster_2 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Олга_Дъщеря->Олга_Съпруга;
+    Олга_Съпруга->Иванка_Дъщеря;
+    Олга_Съпруга->Таня_Дъщеря;
+    Христо->Иванка_Дъщеря;
+    Христо->Таня_Дъщеря;
+    label = "Цоневи";
+  }
+
+  subgraph cluster_3 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Иванка_Дъщеря->Иванка_Съпруга;
+    Иванка_Съпруга->Делян;
+    Иванка_Съпруга->Велина;
+    label = "Спасови";
+  }
+  
+  subgraph cluster_4 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Таня_Дъщеря->Таня_Съпруга;
+    Таня_Съпруга->Орлин;
+    Емил_Съпруг->Орлин;
+    label = "Димитрови";
+  }
+
+  subgraph cluster_5 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Енчо_Син->Енчо_Съпруг;
+    Елена->Людмил_Син;
+    Елка->Елица_Дъщеря;
+    Енчо_Съпруг->Людмил_Син;
+    Енчо_Съпруг->Елица_Дъщеря;
+    label = "Максимови";
+  }
+
+  subgraph cluster_6 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Петър_Син->Петър_Съпруг;
+    Маргарита_Съпруга->Жана_Дъщеря;
+    Петър_Съпруг->Жана_Дъщеря;
+    Маргарита_Съпруга->Йонка_Дъшеря;
+    Петър_Съпруг->Йонка_Дъшеря;
+    label = "Максимови";
+  }
+  
+  subgraph cluster_7 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Жана_Дъщеря->Жана_Съпруга;
+    Жана_Съпруга->Йоанна_Дъщеря;
+    Юлиан_Съпруг->Йоанна_Дъщеря;
+    Жана_Съпруга->Александър_Син;
+    Юлиан_Съпруг->Александър_Син;
+    label = "Максимови";
+  }
+
+  subgraph cluster_8 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Людмил_Син->Людмил_Съпруг;
+    НН_Съпруга->Зорница_Дъщеря;
+    Людмил_Съпруг->Зорница_Дъщеря;
+    НН_Съпруга->Антон_Син;
+    Людмил_Съпруг->Антон_Син;
+    label = "Максимови";
+  }
+
+  subgraph cluster_9 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Елица_Дъщеря->Елица_Съпруга;
+    Елица_Съпруга->1_Син;
+    Красимир_Съпруг->1_Син;
+    Елица_Съпруга->2_Син;
+    Красимир_Съпруг->2_Син;
+    label = "Максимови";
+  }
+
+}
