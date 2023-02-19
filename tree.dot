@@ -1,6 +1,7 @@
 digraph G {
   
   subgraph cluster_1 {
+    label = "Максимови";
     style=filled;
     color=lightgrey;
     node [style=filled,color=white];
@@ -10,10 +11,10 @@ digraph G {
     Йонка->Петър_Син;
     Димитър->Енчо_Син;
     Йонка->Енчо_Син;
-    label = "Максимови";
   }
 
   subgraph cluster_2 {
+    label = "Цоневи";
     style=filled;
     color=lightgrey;
     node [style=filled,color=white];
@@ -22,30 +23,32 @@ digraph G {
     Олга_Съпруга->Таня_Дъщеря;
     Христо->Иванка_Дъщеря;
     Христо->Таня_Дъщеря;
-    label = "Цоневи";
   }
 
   subgraph cluster_3 {
+    label = "Спасови";
     style=filled;
     color=lightgrey;
     node [style=filled,color=white];
     Иванка_Дъщеря->Иванка_Съпруга;
+    Чавдар_Съпруг->Делян;
     Иванка_Съпруга->Делян;
+    Чавдар_Съпруг->Велина;
     Иванка_Съпруга->Велина;
-    label = "Спасови";
   }
   
   subgraph cluster_4 {
+    label = "Димитрови";
     style=filled;
     color=lightgrey;
     node [style=filled,color=white];
     Таня_Дъщеря->Таня_Съпруга;
     Таня_Съпруга->Орлин;
     Емил_Съпруг->Орлин;
-    label = "Димитрови";
   }
 
   subgraph cluster_5 {
+    label = "Максимови";
     style=filled;
     color=lightgrey;
     node [style=filled,color=white];
@@ -54,22 +57,22 @@ digraph G {
     Елка->Елица_Дъщеря;
     Енчо_Съпруг->Людмил_Син;
     Енчо_Съпруг->Елица_Дъщеря;
-    label = "Максимови";
   }
 
   subgraph cluster_6 {
+    label = "Максимови";
     style=filled;
     color=lightgrey;
     node [style=filled,color=white];
     Петър_Син->Петър_Съпруг;
-    Маргарита_Съпруга->Жана_Дъщеря;
+    Маргарита_1_Съпруга->Жана_Дъщеря;
     Петър_Съпруг->Жана_Дъщеря;
-    Маргарита_Съпруга->Йонка_Дъшеря;
+    Маргарита_1_Съпруга->Йонка_Дъшеря;
     Петър_Съпруг->Йонка_Дъшеря;
-    label = "Максимови";
   }
   
   subgraph cluster_7 {
+    label = "Максимови";
     style=filled;
     color=lightgrey;
     node [style=filled,color=white];
@@ -78,10 +81,10 @@ digraph G {
     Юлиан_Съпруг->Йоанна_Дъщеря;
     Жана_Съпруга->Александър_Син;
     Юлиан_Съпруг->Александър_Син;
-    label = "Максимови";
   }
 
   subgraph cluster_8 {
+    label = "Максимови";
     style=filled;
     color=lightgrey;
     node [style=filled,color=white];
@@ -90,10 +93,10 @@ digraph G {
     Людмил_Съпруг->Зорница_Дъщеря;
     НН_Съпруга->Антон_Син;
     Людмил_Съпруг->Антон_Син;
-    label = "Максимови";
   }
 
   subgraph cluster_9 {
+    label = "Максимови";
     style=filled;
     color=lightgrey;
     node [style=filled,color=white];
@@ -102,7 +105,63 @@ digraph G {
     Красимир_Съпруг->1_Син;
     Елица_Съпруга->2_Син;
     Красимир_Съпруг->2_Син;
-    label = "Максимови";
+  }
+
+  subgraph cluster_10 {
+    label = "Жендови";
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Иван_Съпруг->Живко_Син;
+    Жена_Иван->Живко_Син;
+    Иван_Съпруг->Маргарита_2_Дъщеря;
+    Жена_Иван->Маргарита_2_Дъщеря;
+  }
+
+  subgraph cluster_11 {
+    label = "Жендови";
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Антоанета_Съпруга->Иван_Син;
+    Живко_Съпруг->Иван_Син;
+    Живко_Син->Живко_Съпруг;
+  }
+
+  subgraph cluster_12 {
+    label = "Димитрови";
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Петър_2_Съпруг->Звездомир_Син;
+    Маргарита_2_Съпруга->Звездомир_Син;
+    Петър_2_Съпруг->Емил_Син;
+    Маргарита_2_Съпруга->Емил_Син;
+    Маргарита_2_Дъщеря->Маргарита_2_Съпруга;
+    Емил_Син->Емил_Съпруг
+  }
+
+  subgraph cluster_13 {
+    label = "Михайлови";
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Михаил_Съпруг->Благовестка_Дъщеря;
+    Ангелина_Съпруга->Благовестка_Дъщеря;
+    Михаил_Съпруг->Петър_2_Син;
+    Ангелина_Съпруга->Петър_2_Син;
+    Михаил_Съпруг->Цветанка_Дъщеря;
+    Ангелина_Съпруга->Цветанка_Дъщеря;
+    Петър_2_Син->Петър_2_Съпруг;
+  }
+
+  subgraph cluster_14 {
+    label = "Тютюнкови";
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Петър_3_Син->Петър_3_Съпруг;
+    Петър_3_Съпруг->Димитър;
   }
 
 }
